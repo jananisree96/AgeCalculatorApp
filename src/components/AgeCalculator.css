@@ -1,0 +1,128 @@
+/* Container Styling */
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .container_title {
+    text-align: center;
+    color: #006064;
+  }
+  
+  .heading {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: slideDown 1s ease-out;
+  }
+  
+  .para {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #004d40;
+    animation: slideDown 1.2s ease-out;
+  }
+  
+  /* Flexbox Layout */
+  .Container_middle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .right, .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+  }
+  
+  .date {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #004d40;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .date:hover {
+    border-color: #00796b;
+  }
+  
+  .button_div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Button Styling */
+  .button-65 {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .button-65:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+  }
+  
+  .button-65:active {
+    background-color: #00251a;
+    transform: scale(0.98);
+  }
+  
+  /* Left Section */
+  .Container_middle_para {
+    margin-bottom: 10px;
+    color: #004d40;
+  }
+  
+  .age_heading {
+    font-size: 36px;
+    color: #00796b;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .age_heading:hover {
+    color: #004d40;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
